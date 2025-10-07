@@ -1,49 +1,21 @@
+import AddTodo from "./components/AddTodo";
+import AppName from "./components/AppName";
+import Todoitem1 from "./components/Todoitem1";
+import Todoitem2 from "./components/Todoitem2";
+import "./App.css";
+
 function App() {
 
   return <center
   class='todo-container'>
-    <h1>TODO App</h1>
-  
-  <div class="row">
-    <div class="col-6">
-     <input type="text" placeholder="Enter Todo here" />
+    <AppName></AppName>
+    <AddTodo></AddTodo>
+    <div class="items-container">
+    <Todoitem1></Todoitem1>
+    <Todoitem2></Todoitem2>
     </div>
-    <div class="col-4">
-      <input type="date" />
-    </div>
-    <div class="col-2">
-      <button type="button" class="btn btn-success">Add</button>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-6">
-     Buy Milk
-    </div>
-    <div class="col-4">
-     4/10/2025
-    </div>
-    <div class="col-2">
-      <button type="button" class="btn btn-danger">Delete</button>
-    </div>
-  </div>
-
-  
-  <div class="row">
-    <div class="col-6">
-     Go to college
-    </div>
-    <div class="col-4">
-     4/10/2025
-    </div>
-    <div class="col-2">
-      <button type="button" class="btn btn-danger">Delete</button>
-    </div>
-  </div>
-
   </center>
-    
-        
+
 }
 
-export default App
+export default App;
