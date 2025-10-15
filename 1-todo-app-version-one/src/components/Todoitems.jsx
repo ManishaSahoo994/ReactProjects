@@ -1,8 +1,9 @@
 import Todoitem from "./Todoitem";
+import styles from "./Todoitems.module.css";
 const todoItems = ({todoItems}) => {
     return (
     <>
-    <div class="items-container">
+    <div className={styles.itemsContainer}>
         {todoItems.map(item => <Todoitem todoDate={item.dueDate} todoName={item.name}></Todoitem>)}
     </div>
     </>
