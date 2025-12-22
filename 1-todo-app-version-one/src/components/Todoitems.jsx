@@ -1,10 +1,10 @@
 import Todoitem from "./Todoitem";
 import styles from "./Todoitems.module.css";
-const todoItems = ({todoItems}) => {
+const todoItems = ({todoItems, onDeleteClick}) => {
     return (
     <>
     <div className={styles.itemsContainer}>
-        {todoItems.map(item => <Todoitem todoDate={item.dueDate} todoName={item.name}></Todoitem>)}
+        {todoItems.map(item => <Todoitem key={item.name} todoDate={item.dueDate} todoName={item.name} onDeleteClick={onDeleteClick}></Todoitem>)}
     </div>
     </>
     );

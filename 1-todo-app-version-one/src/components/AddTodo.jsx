@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { IoMdAddCircle } from "react-icons/io";
 
 function AddTodo({onNewItem}){
 
@@ -28,7 +29,7 @@ return  <div className="container text-center">
       <input type="date" value={dueDate} onChange={handleDateChange}/>
     </div>
     <div className="col-2">
-      <button type="button" className="btn btn-success kg-button" onClick ={handleAddButtonClicked}>Add</button>
+      <button type="button" className="btn btn-success kg-button" onClick ={handleAddButtonClicked}><IoMdAddCircle/></button>
     </div>
   </div>
   </div>
