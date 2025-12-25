@@ -20,16 +20,16 @@ function AddTodo({onNewItem}){
     setDueDate(""); 
   }
 
-return  <div className="container text-center">
-  <div className="row kg-row">
-    <div className="col-6">
+return  <div classNameName="container text-center">
+  <div classNameName="row kg-row">
+    <div classNameName="col-6">
      <input type="text" placeholder="Enter Todo here" value={todoName} onChange={handleNameChange}/>
     </div>
-    <div className="col-4">
+    <div classNameName="col-4">
       <input type="date" value={dueDate} onChange={handleDateChange}/>
     </div>
-    <div className="col-2">
-      <button type="button" className="btn btn-success kg-button" onClick ={handleAddButtonClicked}><IoMdAddCircle/></button>
+    <div classNameName="col-2">
+      <button type="button" classNameName="btn btn-success kg-button" onClick ={handleAddButtonClicked}><IoMdAddCircle/></button>
     </div>
   </div>
   </div>

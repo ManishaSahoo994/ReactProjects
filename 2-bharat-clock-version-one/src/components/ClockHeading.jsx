@@ -1,5 +1,5 @@
 //by using arrow function
 let ClockHeading = () => {
-    return <h1 className="fw-bolder">Bharat Clock</h1>;
+    return <h1 classNameName="fw-bolder">Bharat Clock</h1>;
 };
 export default ClockHeading;
